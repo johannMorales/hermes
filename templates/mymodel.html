@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        @page  {
+            background-image: url({% static "bg.jpg" %});
+            background-clip: revert;
+            background-size: cover;
+            padding: 4rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="{% static "hermes/image.jpg" %}" alt="My image">
+<img src="{% static "image.jpg" %}" alt="My image">
+
+</body>
+</html>
